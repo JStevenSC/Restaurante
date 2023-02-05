@@ -172,6 +172,7 @@ import TablaDatos from '@/components/TablaDatos.vue'
       },
 
       showModal() {
+        
       if(this.administrador.nombre === "juan"  && this.administrador.contrasena === "123"){
         this.$refs['modal-1'].show()
       }
