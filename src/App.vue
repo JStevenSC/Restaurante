@@ -3,10 +3,12 @@
     <nav >
   
       <b-row class="d-flex flex-row" >
+        <b-col md="1" class=" d-flex text-center  flex-column">
+        </b-col>
         <b-col md="2" >
           <img alt="Vue logo" src="./assets/encanto.png">
         </b-col>
-        <b-col md="7" class=" d-flex text-center  flex-column">
+        <b-col md="6" class=" d-flex text-center  flex-column">
           
         </b-col>
         <b-col md="3" class=" d-flex text-center  flex-column justify-content-center">

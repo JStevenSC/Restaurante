@@ -5,14 +5,11 @@
                 <b-card no-body>
                   <b-tabs card>
                     <b-tab title="Reservas" active>
-                      <b-card-text>Reservas
-                  
+                      <b-card-text>Reservas                  
                       </b-card-text>
                       <div>
                         <b-table striped hover :items="msg"></b-table>
                       </div>
-
-
                     </b-tab>
                     <b-tab title="Pedidos" >
                       <b-card-text>Pedidos</b-card-text>
@@ -22,14 +19,7 @@
                 </b-card>
               </div>
         </b-container>
-
-      
-
-  
-
       </div>
-
-
       
 </template>
 
@@ -37,7 +27,6 @@
 
 import { BTabs } from 'bootstrap-vue'
 import { BIcon, } from "bootstrap-vue";
-
 
 export default {
   name: 'TablaDatos',
@@ -47,7 +36,6 @@ export default {
   data(){
     return {
         tabIndex: 0,
-
         items: [
           { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
           { age: 21, first_name: 'Larsen', last_name: 'Shaw' },

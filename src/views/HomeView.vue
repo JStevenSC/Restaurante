@@ -7,9 +7,9 @@
           
           <b-col md="5" class="mt-1 d-flex flex-column text-left">
            
-            <h1 class="mx-1 my-1">Quienes Somos</h1>
+            <h1 class="mx-1 my-1">¿Quiénes Somos?</h1>
             <img alt="Quienes somos" src="../assets/quienessomos.png" > 
-            <p class="mx-1 my-4">
+            <p class="mx-1 my-4 texto">
               Somos un grupo de personas cuya Misión es Generar Sensaciones Deliciosas,
               a través de la elaboración de nuestros exquisitos productos, manteniendo la calidad en la materia prima, y precios accesibles.
 
@@ -45,6 +45,10 @@ export default {
 <style>
 .carta{
   background-image: url("../assets/fondo2.png");
+}
+.texto{
+  text-align: justify;
+
 }
 
 

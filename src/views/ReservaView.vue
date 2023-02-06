@@ -10,13 +10,13 @@
         <div class=" d-flex  flex-column justify-content-center">
           <!-- <img alt="Vue logo" src="../assets/encanto.png" class=" d-flex text-center  flex-column justify-content-center"> -->
           <b-container class="border border-dark   rounded "  fluid="md">
-            <h2 class="d-flex  justify-content-center"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realiza tu Reserva&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+            <h2 class="d-flex  justify-content-center my-2" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Realiza tu Reserva&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
             <form name="form" v-on:submit.prevent="procesar" class="my-4 mx-4">
               
                 <p class="text-left">
                   Nombre Completo: <input type="text" name="nombre" placeholder="Nombre" class="form-control" v-model="contacto.nombre" autocomplete="off"/>
                 </p>
-                <div class="alert alert-danger" v-if="!$v.contacto.nombre.minLength"  >El campo esta imcopleto</div>
+                <div class="alert alert-danger" v-if="!$v.contacto.nombre.minLength"  >El campo esta incompleto</div>
                 <p>
                   Tipo de Documento:
                   <select v-model="contacto.tipodocumento" class=" container-fluid  d-flex flex-row">
@@ -31,11 +31,11 @@
                 <p>
                   Identificacion: <input type="number" name="nombre" placeholder="Identificacion" class="form-control" v-model="contacto.identificacion" autocomplete="off"/>
                 </p>
-                <div class="alert alert-danger" v-if="!$v.contacto.nombre.minLength"  >El campo esta imcopleto</div>
+                <div class="alert alert-danger" v-if="!$v.contacto.identificacion.minLength"  >El campo esta incompleto</div>
                 <p>
                   E-mail: <input type="email" name="nombre" placeholder="E-mail" class="form-control" v-model="contacto.email" autocomplete="off"/>
                 </p>
-                <div class="alert alert-danger" v-if="!$v.contacto.email.minLength"  >El campo esta imcopleto</div>
+                <div class="alert alert-danger" v-if="!$v.contacto.email.minLength"  >El campo esta incompleto</div>
                 <p>
                   Fecha de Reserva: <input type="date" name="nombre" placeholder="Fecha de Reserva" class="form-control" v-model="contacto.fecha" autocomplete="off"/>
                 </p>      
@@ -53,8 +53,6 @@
                     <option>Ocasion Especial</option>
                   </select>
                 </p>
-
-
                 <p>
                   Descripcion y/o observciones: <textarea rows="2" type="text" name="nombre" placeholder="Descripcion" class="form-control" v-model="contacto.descripcion" autocomplete="off"/>
                 </p>
@@ -67,35 +65,37 @@
       </b-col>
 
       <b-col md="2" class="d-flex flex-row ">
-        <img alt="Vue logo" src="../assets/fondo3.png" >   
+        <img alt="fono3" src="../assets/fondo3.png" >   
       </b-col> 
     </b-row>
 
 
     <div>
       <b-row>
-        <b-col md="2">
-          
+        <b-col md="2">          
         </b-col>
         <b-col md="8" >
-          <div class="border border-dark my-5 mx-5 rounded d-flex flex-row">
-            <h4 class="mx-4 my-4" >Administrador:</h4>
+          <div class="border border-dark my-5 mx-5 rounded d-flex ">
+            <h4 class="mx-3 my-4" >Administrador:</h4>
 
               <form name="form" class="mx-2 my-2">
                 <div class="text-left d-flex flex-row">
                   <p >
-                    Nombre Completo: <input type="text" name="nombre" placeholder="Nombre" class="form-control" v-model="administrador.nombre" autocomplete="off"/>
-                  </p>     
-                  
-                  <p>
-                    Cotraseña: <input type="password" name="nombre" placeholder="Contraseña" class="form-control" v-model="administrador.contrasena" autocomplete="off"/>
+                    Nombre: <input type="text" name="nombre" placeholder="Nombre" class="form-control " v-model="administrador.nombre" autocomplete="off"/>
+                  </p>                   
+                  <p class="mx-2">
+                    Cotraseña: <input type="password" name="nombre" placeholder="Contraseña" class="form-control mx-2" v-model="administrador.contrasena" autocomplete="off"/>
                   </p>
-            
-                  <input type="submit1" value="Enviar" title="Enviar" class="btn btn-danger" @click="showModal" />
+                  <div>
+                  <!-- <input type="submit1"  title="Ingresar" value="Ingresar" class="btn btn-danger my-4 mx-3" @click="showModal" /> -->
                   
+                  </div>
                 </div>
 
               </form>
+              <div>
+              <b-button class="btn btn-danger d-flex flex-row  mt-4 mx-2 "  @click="showModal" >Ingresar</b-button>
+            </div>
              
 
             <div>
@@ -160,19 +160,18 @@ import TablaDatos from '@/components/TablaDatos.vue'
           alert('Se deben llenar todo los Campos Correctamente');
         }
         else {
-          alert('Reserva realizada')
+          alert('Reserva Realizada Exitosamete')
+          this.array.push(this.contacto)
+          console.log(this.contacto)
+          console.log(this.array) 
+          this.contacto={        
         }
-        this.array.push(this.contacto)
-        console.log(this.contacto)
-        console.log(this.array) 
-        this.contacto={
-        
-        }
+      }
         
       },
 
       showModal() {
-        
+
       if(this.administrador.nombre === "juan"  && this.administrador.contrasena === "123"){
         this.$refs['modal-1'].show()
       }
