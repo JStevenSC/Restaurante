@@ -84,7 +84,7 @@
                     Nombre: <input type="text" name="nombre" placeholder="Nombre" class="form-control " v-model="administrador.nombre" autocomplete="off"/>
                   </p>                   
                   <p class="mx-2">
-                    Cotraseña: <input type="password" name="nombre" placeholder="Contraseña" class="form-control mx-2" v-model="administrador.contrasena" autocomplete="off"/>
+                    Contraseña: <input type="password" name="nombre" placeholder="Contraseña" class="form-control mx-2" v-model="administrador.contrasena" autocomplete="off"/>
                   </p>
                   <div>
                   <!-- <input type="submit1"  title="Ingresar" value="Ingresar" class="btn btn-danger my-4 mx-3" @click="showModal" /> -->
@@ -128,7 +128,7 @@ import TablaDatos from '@/components/TablaDatos.vue'
     data() {
       return{
         array:[],
-        ensayo:"se envia eldato",
+        ensayo:"se envia el dato",
         submited:false,
         selected:"",
         contacto:{

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Orden from '../views/Orden.vue'
+import Admin from '../views/Administrador.vue'
 
 Vue.use(VueRouter)
 
@@ -24,6 +25,11 @@ const routes = [
     path: '/orden',
     name: 'orden',
     component: () => import( '../views/Orden.vue')
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import( '../views/Administrador.vue')
   }
 ]
 

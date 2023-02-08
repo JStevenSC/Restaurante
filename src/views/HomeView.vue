@@ -9,22 +9,23 @@
            
             <h1 class="mx-1 my-1">¿Quiénes Somos?</h1>
             <img alt="Quienes somos" src="../assets/quienessomos.png" > 
-            <p class="mx-1 my-4 texto">
-              Somos un grupo de personas cuya Misión es Generar Sensaciones Deliciosas,
-              a través de la elaboración de nuestros exquisitos productos, manteniendo la calidad en la materia prima, y precios accesibles.
-
-              Contamos con un personal capacitado y con las competencias necesarias a nuestra necesidades, 
-              desde el área administrativa, productiva y de servicio. 
-              Internamente siempre estamos a la vanguardia de mejorar nuestros procesos internos e innovación en el ámbito gastronómico.
-              Nos esforzamos por que todo el equipo este motivado y feliz de hacer parte de la empresa,
-              por ello siempre estamos en constante capacitación. Mantenemos siempre vigente y en práctica los valores que 
-              nos han permitido mantenernos en el tiempo: responsabilidad, trabajo en equipo, perseverancia, honestidad y solidaridad. 
-              Trabajamos de igual manera los roles que como seres humanos tenemos, individual ( conocimiento del ser ), 
-              familiar, laboral, social, permitiendo tener herramientas que nos permitan cada día sentirnos y ser mejores seres.
+            <p class="mx-1 my-2 texto">
+              Somos una Familia apasionada por la gastronomía y el buen servicio, que nos gusta rodearnos 
+              con gente de los mismos gustos para disfrutar de atenderle de la mejor manera.
+              Como restaurante nacimos el primero de Julio del 2013, después de haber 
+              disfrutado todos  las recetas  familiares y decidido mostrarlos al mundo. 
             </p>
-             
-
-    
+            <h4 class="my-1" >Misión</h4>
+            <p class=" texto my-1">
+            Superar las expectativas de nuestros clientes de forma tal que nuestro nombre sea conocido como una experiencia memorable
+            Ser opción destacable y diferente.
+            Mantener una excelente calidad en nuestros platos.
+            </p>
+            <h4 class="my-1">Visión</h4>
+            <p class=" texto my-1">
+            Ser reconocidos entre los mejores restaurantes a nivel local y nacional por nuestra oferta gastronómica, ambiente y atención.
+            </p>
+                       
           </b-col>
     
           <b-col md="2" class="d-flex flex-row ">
@@ -48,7 +49,6 @@ export default {
 }
 .texto{
   text-align: justify;
-
 }
 
 

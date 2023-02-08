@@ -11,28 +11,28 @@
                 <b-card no-body>
                     <b-tabs card>
                         <b-tab title="Pasta" active>                            
-                            <b-form-group label="Selecciona el sabor" >
+                            <b-form-group label="Selecciona el sabor de su pasta" >
                                 <b-form-checkbox-group v-model="pasta" :options="pastas">
                                 </b-form-checkbox-group>
                             </b-form-group>
                             <img alt="tomate" src="../assets/pasta.png" class="img-fluid my-3" >                            
                         </b-tab>
                         <b-tab title="Pizza">                        
-                            <b-form-group label="Selecciona el sabor"  >
+                            <b-form-group label="Selecciona Ingredientes para la Pizza"  >
                                 <b-form-checkbox-group v-model="pizza" :options="pizzas">
                                 </b-form-checkbox-group>
                             </b-form-group>
                             <img alt="pizza" src="../assets/pizza.png" class="img-fluid my-3" >
                         </b-tab>
                         <b-tab title="Al Horno">                            
-                            <b-form-group label="Selecciona el sabor"  >
+                            <b-form-group label="Selecciona Entrada"  >
                                 <b-form-checkbox-group v-model="horno" :options="hornos">
                                 </b-form-checkbox-group>
                             </b-form-group>
                             <img alt="alhorno" src="../assets/alhorno.png" class="img-fluid my-3" >
                         </b-tab>
                         <b-tab title="Bebida" >                            
-                            <b-form-group label="Selecciona el sabor"  >
+                            <b-form-group label="Selecciona sabor de Bebida"  >
                                 <b-form-checkbox-group v-model="bebida" :options="bebidas">
                                 </b-form-checkbox-group>
                             </b-form-group>
@@ -59,31 +59,31 @@ export default {
         confirmar:false,
         pasta: [], 
         pastas: [
-          { text: 'Salmon', value: 'orange' },
-          { text: 'Al pesto', value: 'apple' },
-          { text: 'Vegetales', value: 'pineapple' },
-          { text: 'Alfredo', value: 'grape' }
+          { text: 'Salmon', value: 'salmon' },
+          { text: 'Al pesto', value: 'alpesto' },
+          { text: 'Vegetales', value: 'vegetales' },
+          { text: 'Carne', value: 'carne' }
         ],
         pizza: [], 
         pizzas: [
-          { text: 'Pollo', value: 'orange' },
-          { text: 'Peperoni', value: 'apple' },
-          { text: 'Champiñon', value: 'pineapple' },
-          { text: 'Queso', value: 'grape' }
+          { text: 'Pollo', value: 'pollo' },
+          { text: 'Peperoni', value: 'peperoni' },
+          { text: 'Champiñon', value: 'champinon' },
+          { text: 'Queso', value: 'queso' }
         ],
         horno: [], 
         hornos: [
-          { text: 'Hojaldre Arequipe', value: 'orange' },
-          { text: 'Hojaldre Queso', value: 'apple' },
-          { text: 'Cruasán', value: 'pineapple' },
-          { text: 'Bruchetas', value: 'grape' }
+          { text: 'Hojaldre Verduras', value: 'hverdura' },
+          { text: 'Hojaldre Queso', value: 'hqueso' },
+          { text: 'Cruasán', value: 'cruasan' },
+          { text: 'Bruchetas', value: 'brucheta' }
         ],
         bebida: [], 
         bebidas: [
-          { text: 'Fresa', value: 'orange' },
-          { text: 'Mango', value: 'apple' },
-          { text: 'Manzana', value: 'pineapple' },
-          { text: 'Piña', value: 'grape' }
+          { text: 'Fresa', value: 'fresa' },
+          { text: 'Mango', value: 'mango' },
+          { text: 'Manzana', value: 'manzana' },
+          { text: 'Piña', value: 'pina' }
         ]
       }
     },
