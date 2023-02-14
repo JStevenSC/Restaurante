@@ -5,6 +5,7 @@
                       
             <b-col md="5" class=" d-flex text-center  flex-column">
                 <img alt="tomate" src="../assets/tomate.png" class="img-fluid" >
+                
               </b-col>
               
             <b-col md="5" >
